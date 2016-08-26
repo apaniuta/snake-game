@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Snake Game</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+		<link rel="shortcut icon" href="favicon.png">
+		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Paytone+One">
+		<link href='https://fonts.googleapis.com/css?family=Ubuntu:400,400italic' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="css/main.css">
+	</head>
+	<body>
+
+		<main>
+			<div class="snake">
+				<canvas id="canvas">Обновите браузер</canvas>
+				<div class="overlay"></div>
+				<div class="menu">
+					<div class="main-menu">
+						<div class="new-game"><h1>New Game</h1></div>
+						<div class="game-options"><h1>Game Options</h1></div>
+						<div class="created-by"><p>created by</p> <a href="https://apaniuta.github.io" target="_blank">Andrey Paniuta</a></div>
+					</div>
+					<div class="options-values hidden">
+						<div class="boundaries">
+							<h2>Boundaries:</h2>
+							<p class="yes">Yes</p>
+							<p class="no focused">No</p>
+						</div>
+						<div class="blocks">
+							<h2>Blocks:</h2>
+							<p class="yes focused">Yes</p>
+							<p class="no">No</p>
+						</div>
+						<div class="game-speed">
+							<h2>Game Speed:</h2>
+							<div class="game-speed-values">
+								<div><p class="slow">Slow</p></div>
+								<div><p class="medium focused">Medium</p></div>
+								<div><p class="fast">Fast</p></div>
+							</div>
+						</div>
+						<div class="back-from-options"><h2>Back</h2></div>
+					</div>
+					<div class="pause-menu hidden">
+						<div class="resume"><h1>Resume</h1></div>
+						<div class="back-from-pause"><h1>Back To Menu</h1></div>
+					</div>
+					<div class="re-menu hidden">
+						<div class="game-over"><h1>Game Over!</h1></div>
+						<div class="high-score"><p>High Score:</p> <span class="high-score-value"></span></div>
+						<div class="share">
+							<p>Share:</p>
+							<div class="icons">
+								<a class="vk-share" href="https://vk.com" title="On Vk.com" target="_blank"><img src="img/vk-logo.png"></a>
+								<a class="fb-share" href="https://facebook.com" title="On Facebook.com" target="_blank"><img src="img/fb-logo.png"></a>
+							</div>
+						</div>
+						<div class="play-again"><h2>Play Again</h2></div>
+						<div class="back-from-re-menu"><h2>Back To Menu</h2></div>
+					</div>
+				</div>
+				<div class="control-btns hidden">
+					<div class="left"><img src="img/left.png" alt="left"></div>
+					<div class="right"><img src="img/right.png" alt="right"></div>
+					<div class="up"><img src="img/up.png" alt="up"></div>
+					<div class="down"><img src="img/down.png" alt="down"></div>
+				</div>
+			</div>
+		</main>
+
+		<script src="libs/device.js"></script>
+		<script src="js/snake.js"></script>
+		<script src="js/main.js"></script>
+	</body>
+</html>
