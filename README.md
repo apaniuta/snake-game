@@ -1,7 +1,7 @@
 ## Snake game
 My javascript/canvas implementation of famous game - Snake.
 
-###Features: 
+### Features: 
 
 - Scaling to different screen resolution.
 
